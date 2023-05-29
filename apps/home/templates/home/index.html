@@ -1,0 +1,12 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.colombiaturismo.com.co/img/900/colombia-turismo.jpg" alt="..." /></div>
+        <div class="col-lg-5">
+            <h1 class="font-weight-light">¡Descubre Colombia!</h1>
+            <p>Viajar por Colombia es compartir con una infinidad de culturas y descubrir paisajes inimaginables, pues solo nuestro país es capaz de reunir a varias comunidades y combinar opuestos como la nieve y el mar en un mismo lugar.</p>
+            <a class="btn btn-success" href="{% url 'destino:index' %}">...empieza hoy!</a>
+        </div>
+    </div>
+{% endblock content %}

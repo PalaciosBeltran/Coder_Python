@@ -1,0 +1,13 @@
+{% extends 'destino/index.html' %}
+
+{% block content_destino %}
+<div class="card-body p-4">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-primary" type="submit">Solicitar</button>
+        <br>
+    </form>
+    <br>
+</div>    
+{% endblock content_destino %}
